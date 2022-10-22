@@ -17,9 +17,14 @@ class RodasStack {
     return this.stackAsList.pop()
   }
 
+  public peekClass(): number | undefined { 
+    return this.stackAsList[this.stackAsList.length - 1]
+  }
+
   StackArray(): void {
     console.log(this.stackAsList)
   }
 }
 
 export = RodasStack
+
